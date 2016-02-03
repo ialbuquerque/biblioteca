@@ -33,4 +33,10 @@ public class PrinterTest {
         printer.printMenu();
         assertThat(outContent.toString(), is("Menu Options:\n1) - List Books:\n"));
     }
+
+    @Test
+    public void shouldPrintBookList() throws Exception {
+        printer.printBookList();
+        assertThat("\nBook list:\nTest-Driven Development\n", is(outContent.toString()));
+    }
 }
