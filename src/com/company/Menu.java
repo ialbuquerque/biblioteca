@@ -8,5 +8,9 @@ import static java.util.Arrays.asList;
  * Created by mmachica on 2/2/16.
  */
 public class Menu {
-    List<String> menuOptions = asList("1) - List Books:");
+    private List<String> menuOptions = asList("1) - List Books:");
+
+    public List<String> getMenuOptions() {
+        return menuOptions;
+    }
 }

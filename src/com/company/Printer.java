@@ -12,7 +12,7 @@ public class Printer {
 
     public void printMenu(){
         System.out.println("Menu Options:");
-        for (String option : menu.menuOptions) {
+        for (String option : menu.getMenuOptions()) {
             System.out.println(option);
         }
     }
